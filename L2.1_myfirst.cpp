@@ -1,10 +1,10 @@
 // my first.cpp -- display a message
 
-#include<iostream>
-int main() {
-	using namespace std;
-	cout << "Come up and C++ me some time.";
-	cout << endl;
-	cout << "You won't regret it!" << endl;
-	return 0;
-}
+#include<iostream>// a PREPROCESSOR directive
+int main() {//function header	
+	using namespace std;//make definitions visible
+	cout << "Come up and C++ me some time.";//message
+	cout << endl;//start a nem line
+	cout << "You won't regret it!" << endl;//more output
+	return 0;//terminate main()
+}//end of function body
