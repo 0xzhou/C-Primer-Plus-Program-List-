@@ -1,5 +1,5 @@
 // carrots.cpp -- food processing program
-// uses and displays a variable
+// uses and displays a variable~
 
 #include<iostream>
 
