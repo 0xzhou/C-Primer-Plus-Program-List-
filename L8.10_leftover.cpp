@@ -31,9 +31,9 @@ unsigned long left(unsigned long num, unsigned ct)
 	while (n /= 10)digits++;
 	if (digits > ct)
 	{
-		ct = digits - ct;
+		ct = digits - ct;//the digits we want to get
 		while (ct--)
-			num /= 10;
+			num /= 10;//
 		return num;
 	}
 	else
