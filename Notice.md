@@ -28,3 +28,8 @@ The `new` operator returns the address of first element of array to the pointer 
 ## 8.1 C++ Inline Functions
 
 Inline functions are a C++ enhancement designed to speed up programs. The primary distinction between In.f and normal function is : how the C++ compiler incorporates them into a program.
+
+## 8.4 Function Overloading
+
+The key to function overloading is a function's argument list, also called the *function signature*.
+
