@@ -28,10 +28,10 @@ unsigned long left(unsigned long num, unsigned ct)
 	unsigned long n = num;
 
 	if (ct == 0 || num == 0)return 0;
-	while (n /= 10)digits++;
+	while (n /= 10)digits++;//calculate how many digits the num has
 	if (digits > ct)
 	{
-		ct = digits - ct;//the digits we want to get
+		ct = digits - ct;//the digits we want to get, from the beginning
 		while (ct--)
 			num /= 10;//
 		return num;

@@ -1,3 +1,19 @@
+### Integer Types
+
+*Integers* are numbers with no fractional part.
+
+C++'s basic integer types, in order of increasing width, are `char`,  `short`,` int`, `long` and with C++11 `long long`. Each comes in both signed and unsigned versions. 
+
+>The fundamental unit of computer is *bit*, which has the value 0 or 1. A *byte* usually means an 8-bit unit of memory.
+
+
+
+
+
+
+
+
+
 ## 8.2 引用变量 Reference Variables
 
 别名=alias, alternative name
