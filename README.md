@@ -8,3 +8,5 @@ string类型变量；
 
 
 18.12.18: 该怎么理解 const char *类型，如const char * str="Packages", str=? *str=? $\to$ 字符型指针
+
+20.12.18：datastructure
