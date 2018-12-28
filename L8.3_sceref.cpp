@@ -3,7 +3,7 @@
 int main() {
 	using namespace std;
 	int rats = 101;
-	int & rodents = rats;
+	int & rodents = rats; // rodents is a reference 
 	cout << "rats = " << rats << ", rodents = " << rodents << endl;
 	cout << "rats address = " << &rats;
 	cout << ", rodents address = " << &rodents << endl;
@@ -17,5 +17,5 @@ int main() {
 	cout << "bunnies address = " << &bunnies;
 	cout << ", rodents address = " << &rodents<<endl;
 	return 0;
-
 }
+// 'rodents = bunnies' is equivalent to 'rats = bunnies'
