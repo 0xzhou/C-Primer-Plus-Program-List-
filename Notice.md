@@ -12,11 +12,25 @@ C++'s basic integer types, in order of increasing width, are `char`,  `short`,` 
 
 
 
-
+``
 
 ## 8.2 引用变量 Reference Variables
 
-别名=alias, alternative name
+别名=alias, alternative name.
+
+
+
+For one, it is necessary to initialize the reference when you declare it; you can’t declare the reference and then assign it a value later the way you can with a pointer:
+
+`int rat;
+int & rodent;
+rodent = rat; // No, you can't do this.`
+
+
+
+
+
+
 
 ### 7.3.5 Pointer and `const`
 
@@ -41,11 +55,11 @@ Now for a subtle point. This declaration for `pt` doesn't necessarily mean that 
 The `new` operator returns the address of first element of array to the pointer `psome`.
 `delete [] psome; // free a dynamic array` 
 
-## 8.1 C++ Inline Functions
+## 8.1 C++ Inline Functions(内联函数)
 
 Inline functions are a C++ enhancement designed to speed up programs. The primary distinction between In.f and normal function is : how the C++ compiler incorporates them into a program.
 
-## 8.4 Function Overloading
+## 8.4 Function Overloading(函数的重载)
 
 The key to function overloading is a function's argument list, also called the *function signature*.
 
