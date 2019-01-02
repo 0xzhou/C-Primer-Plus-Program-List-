@@ -4,7 +4,8 @@
 #include"stock00.h"
 int main()
 {
-	Stock flutty_the_cat;
+	Stock flutty_the_cat;//uses the default constructor
+	// like Stock::Stock() {}
 	flutty_the_cat.acquire("NanoSmart", 20, 12.50);//"NanoSmart" is the name of shares
 	flutty_the_cat.show();
 	flutty_the_cat.buy(15, 18.125);
