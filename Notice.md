@@ -85,7 +85,31 @@ C++ provides for special member functions, called *class constructors*, especial
 
 See the example.
 
+### 10.3.2 Using Constructors
 
+The first is to call the constructor explicitly:
+
+`Stock food = Stock（"World Cabbage", 250, 1.25);`
+
+The second way is to call the constructor implicitly:
+
+`Stock garment("Furry Mason", 50, 2.5);`
+
+However, you can’t use an object to invoke a constructor because until the constructor finishes its work of making the object, there is no object. Rather than being invoked by an object, the constructor is used to create the object.
+
+### 10.3.3 Default Constructor 默认构造函数
+
+A *default constructor* is a constructor that is used to create an object when you don't provide explicit initialization values. That is, it's a constructor like this:
+
+`Stock mycompany; //uses the default constructor`
+
+For the `Stock` class, the default constructor would look like this:
+
+`Stock::Stock() {}`
+
+The net result is that the *mycompany* object is created with its members uninitialized, just as the following creates x without providing a value for x:
+
+`int x;`
 
 
 
