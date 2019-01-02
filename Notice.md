@@ -67,6 +67,25 @@ If two functions use the same number and types of arguments in the same order, t
 
 **Note**: A lack of a matching prototype doesn't automatically rule out using one of the functions because C++ will try to use standard type conversions to force a match. When there are more than one alternatives to be converted, C++ rejects the function call as an error.
 
+## 10.2 Abstraction and Classes
+
+To help identify classes, this book follows a common, but not universal, convention of capitalizing(大写) class names.
+
 ## 10.3 Class Constructors and Destructors
 
-One of C++'s aims is to make using class objects similar to using standard types. However, the code provided so far in this chapter doesn't let you initialize a `Stock` object the way you can an ordinary `int` or `struct`.
+One of C++'s aims is to make using class objects similar to using standard types. However, the code provided so far in this chapter doesn't let you initialize a `Stock` object the way you can an ordinary `int` or `struct`. For example:
+
+`Stock hot = {"Sukie's Autos, Inc.", 200, 50.25};// NO! compile error`
+
+The reason you can’t initialize a Stock object this way is because the data parts have private access status, which means **a program cannot** access the data members **directly**. So the only way a program can access the data members is through a member function. Therefore, you need to devise(设计) an appropriate member function if you're succeed in initializing an object.
+
+C++ provides for special member functions, called *class constructors*, especially for constructing new objects and assigning values to their data members. (专门用于构造新对象和将值赋给它们的初始成员)
+
+### 10.3.1 Declaring and Defining Constructors
+
+See the example.
+
+
+
+
+
