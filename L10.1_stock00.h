@@ -6,6 +6,8 @@
 #include<string>
 
 class Stock //class declaration
+//The syntax identifies Stock as the type name for this new class.This declaration enables you to declare
+//variables, called objects, or instances, of the Stock type.
 {
 private:
 	std::string company;
