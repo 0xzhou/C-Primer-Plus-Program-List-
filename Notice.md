@@ -67,3 +67,6 @@ If two functions use the same number and types of arguments in the same order, t
 
 **Note**: A lack of a matching prototype doesn't automatically rule out using one of the functions because C++ will try to use standard type conversions to force a match. When there are more than one alternatives to be converted, C++ rejects the function call as an error.
 
+## 10.3 Class Constructors and Destructors
+
+One of C++'s aims is to make using class objects similar to using standard types. However, the code provided so far in this chapter doesn't let you initialize a `Stock` object the way you can an ordinary `int` or `struct`.
