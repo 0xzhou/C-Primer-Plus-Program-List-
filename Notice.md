@@ -6,14 +6,6 @@ C++'s basic integer types, in order of increasing width, are `char`,  `short`,` 
 
 >The fundamental unit of computer is *bit*, which has the value 0 or 1. A *byte* usually means an 8-bit unit of memory.
 
-
-
-
-
-
-
-``
-
 ## 8.2 引用变量 Reference Variables
 
 别名=alias, alternative name.
@@ -110,6 +102,10 @@ For the `Stock` class, the default constructor would look like this:
 The net result is that the *mycompany* object is created with its members uninitialized, just as the following creates x without providing a value for x:
 
 `int x;`
+
+### 10.3.4 Destructors                         
+
+For example, if your constructor uses `new` to allocate memory, the destructor should use `delete` to free that memory.​  The *Stock* constructor doesn't do anything fancy(?) like using `new`, so the *Stock* class destructor doesn't really have any tasks to perform.       
 
 
 
