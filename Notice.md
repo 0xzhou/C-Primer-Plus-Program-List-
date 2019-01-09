@@ -6,6 +6,21 @@ C++'s basic integer types, in order of increasing width, are `char`,  `short`,` 
 
 >The fundamental unit of computer is *bit*, which has the value 0 or 1. A *byte* usually means an 8-bit unit of memory.
 
+## 4.6 Enumerations(枚举)
+
+The C++ `enum` facility provides an alternative to `const` for creating symbolic constants. For example, consider the following statement:
+
+`enum spectrum {red, orange, yellow, green, blue, violet, indigo, ultraviolet};`
+
+This statement does two things:
+
+* It makes `spectrum` the name of a new type; `spectrum` is termed an *enumeration*, much as a *struct* variable is called a structure.
+* It established `red, orange,`and so on, as symbolic constants for the integer value 0-7. These constants are called enumerators.
+
+You can use an enumeration name to declare a variable of the enumeration type:
+
+`spectrum band; //band :a variable of type spectrum`
+
 
 
 ### 4.7.6 Using `new` to create dynamic arrays
