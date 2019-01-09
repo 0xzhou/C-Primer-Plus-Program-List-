@@ -6,6 +6,18 @@ C++'s basic integer types, in order of increasing width, are `char`,  `short`,` 
 
 >The fundamental unit of computer is *bit*, which has the value 0 or 1. A *byte* usually means an 8-bit unit of memory.
 
+
+
+## 4.1 Introducing Arrays
+
+To create an array, you use a declaration statement.An array declaration should indicate three things:
+
+* The type of the value to be stored in each element
+* The name of the array
+* The number of elements in the array
+
+
+
 ## 4.6 Enumerations(枚举)
 
 The C++ `enum` facility provides an alternative to `const` for creating symbolic constants. For example, consider the following statement:
@@ -20,6 +32,46 @@ This statement does two things:
 You can use an enumeration name to declare a variable of the enumeration type:
 
 `spectrum band; //band :a variable of type spectrum`
+
+The only valid values that you can assign to an enumeration variable without a **type cast**(强制类型转换) are the enumerator values used in defining the type.Thus, we have the following:
+
+`band = blue; //valid, blue is an enumerator`
+
+`band = 2000; // invalid, 2000 not an enumerator`
+
+Only the **assignment(赋值)** operator is defined for enumerations. In particular, arithmetic operations like `++band; band = orange + red` are not defined.
+
+
+
+Enumerator are of integer type and can be promoted to type `int`, but `int` types are not converted automatically to the enumeration type:
+
+`int color = blue; //valid, spectrum type promoted to int`
+
+`band = 3; //invalid, int not converted to spectrum`
+
+`color=3+red;//valid, red converted to int`
+
+You can assign an `int` value to an `enum`, provided that the value is valid and that you use an explicit type cast:
+
+`band = spectrum(3) // typecast 3 to type spectrum`
+
+
+
+### 4.6.1 Setting Enumerator Values
+
+You can set enumerator values explicitly by using the assignment operator:
+
+`enum bits{one = 1, two = 2, four = 3, eight = 4};`
+
+The assigned values must be integers.
+
+
+
+
+
+
+
+
 
 
 
