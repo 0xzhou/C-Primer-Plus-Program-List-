@@ -18,6 +18,34 @@ To create an array, you use a declaration statement.An array declaration should 
 
 
 
+## 4.2 Strings 
+
+A `string` is a series of characters(字符) stored in consecutive(连续的) bytes of memory.
+
+The idea of a series of characters stored in consecutive bytes implies that you can store a string in an array of char, with each character kept in its own array element.
+
+C-style strings have a special feature: The last character of every string is the *null character*.This character, written `\0`, is the character with ASCII code 0, and it serves to mark the string’s end. For example, consider the following two declarations:
+
+`char dog[8]={'b','e','a','u','x',' ','t','i'}// not a string`
+
+`char dog[8]={'f','a','t','e','s','s','a','\0'}// a string !`
+
+The ***null character*** plays a fundamental role in C-style strings. For example, C++ has many functions that handle strings, including those used by `cout`. They all work by processing a string character-by-character until they reach the *null character*.
+
+There is a better way to initialize a character array to a string. Just use a quoted string, called a *string constant* or *string literal*, as in the following:
+
+`char bird[11]="Mr.Cheeps" // the \o is understood`
+
+`char fish[]="Bubbles"; let the compiler count`
+
+Note that a string constant (with double quotes) is not interchangeable with a character constant (with single quotes).A character constant, such as `'S'`, is a shorthand notation for the code for a character. On an ASCII system, 'S' is just another way of writing 83. Thus, the following statement assigns the value 83 to `shirt_size`:
+
+`char shirt_size = 'S'; // this is fine`
+
+But `"S"` is not a character constant; it represents the string consisting of two characters, the `S `and the `\0 `characters. So a statement like the following attempts to assign a memory address to `shirt_size`:
+
+`char shirt_size = "S"; // illegal type mismatch`
+
 ## 4.6 Enumerations(枚举)
 
 The C++ `enum` facility provides an alternative to `const` for creating symbolic constants. For example, consider the following statement:
