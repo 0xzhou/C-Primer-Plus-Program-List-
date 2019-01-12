@@ -46,6 +46,12 @@ But `"S"` is not a character constant; it represents the string consisting of tw
 
 `char shirt_size = "S"; // illegal type mismatch`
 
+
+
+### 4.2.3 Adventure in String Input
+
+L4.3：The `cin` technique is to use whitespace--spaces, tabs, and newlines to delineate a string. This means `cin` just reads one word when it gets input for a character array.
+
 ## 4.6 Enumerations(枚举)
 
 The C++ `enum` facility provides an alternative to `const` for creating symbolic constants. For example, consider the following statement:
