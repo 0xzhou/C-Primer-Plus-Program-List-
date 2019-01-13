@@ -80,6 +80,11 @@ Fortunately, there is help in the form of a variation of `get()`. The call `cin.
 
 `cin.get(dessert, Arsize); // read second line`
 
+Another way to use `get()` is to *concatenate*, or join, the two class member functions, as
+follows:
+
+`cin.get(name, ArSize).get(); // concatenate member functions`
+
 ## 4.6 Enumerations(枚举)
 
 The C++ `enum` facility provides an alternative to `const` for creating symbolic constants. For example, consider the following statement:
