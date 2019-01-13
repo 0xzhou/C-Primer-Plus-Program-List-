@@ -52,6 +52,34 @@ But `"S"` is not a character constant; it represents the string consisting of tw
 
 L4.3：The `cin` technique is to use whitespace--spaces, tabs, and newlines to delineate a string. This means `cin` just reads one word when it gets input for a character array.
 
+### 4.2.4 Reading String Input a Line at a Time
+
+Reading string input a word at a time is often not the most desirable choice.
+
+Specifically, you need a line-oriented method instead of a word-oriented method. You are in luck, for the `istream` class, of which `cin` is an example, has some line-oriented class member functions: `getline()` and `get()`. Both read an entire input line—that is, up until a newline character(换行符). 
+
+However, `getline()` then discards the newline character, whereas `get()` leaves it in the input queue. `get()`doesn't reads and stores the newline character. Let’s look at the details, beginning with `getline()`.
+
+The `getline()` function conveniently gets a line at a time. It reads input through the newline
+character marking the end of the line, but it doesn't save the newline character. Instead, it replaces it with a `null character('\0')` when storing the string (see Figure 4.5).
+
+But rather than read and discard the newline character, `get()` leaves that character in the input
+queue. Suppose you use two calls to get() in a row:
+
+`cin.get(name, ArSize);`
+
+`cin.get(dessert, Arsize); // a problem`
+
+Because the first call leaves the newline character in the input queue, that newline character is the first character the second call sees.Thus, `get()` concludes that it’s reached the end of line without having found anything to read.Without help, `get()` just can’t get past that newline character.
+
+Fortunately, there is help in the form of a variation of `get()`. The call `cin.get()` (with no arguments) reads the single next character, even if it is a newline, so you can use it to dispose of the newline character and prepare for the next line of input.That is, this sequence works:
+
+`cin.get(name, ArSize); // read first line`
+
+`cin.get(name, ArSize); // read first line`
+
+`cin.get(dessert, Arsize); // read second line`
+
 ## 4.6 Enumerations(枚举)
 
 The C++ `enum` facility provides an alternative to `const` for creating symbolic constants. For example, consider the following statement:
