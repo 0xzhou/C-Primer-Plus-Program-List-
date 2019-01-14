@@ -251,3 +251,9 @@ For example, if your constructor uses `new` to allocate memory, the destructor s
 
 
 
+## 11.1 Operator Overloading
+
+C++ lets you extend operator overloading to user-defined types, permitting you, say, to use the `+` symbol to add two objects. Again, the compiler uses the number and type of operands to determine which definition of addition to use. Overloaded operators can often make code look more natural.
+
+## 11.2 Time on Our Hands: Developing an Operator Overloading Example
+
