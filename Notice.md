@@ -72,7 +72,7 @@ queue. Suppose you use two calls to get() in a row:
 
 Because the first call leaves the newline character in the input queue, that newline character is the first character the second call sees.Thus, `get()` concludes that it’s reached the end of line without having found anything to read.Without help, `get()` just can’t get past that newline character.
 
-Fortunately, there is help in the form of a variation of `get()`. The call `cin.get()` (with no arguments) reads the single next character, even if it is a newline, so you can use it to dispose of the newline character and prepare for the next line of input.That is, this sequence works:
+Fortunately, there is help in the form of a variation of `get()`. The call `cin.get()` (with no arguments) reads the single next character, even if it is a newline, so you can use it to dispose of the newline character and prepare for the next line of input. That is, this sequence works:
 
 `cin.get(name, ArSize); // read first line`
 
