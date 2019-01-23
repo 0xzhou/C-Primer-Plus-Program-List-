@@ -185,8 +185,6 @@ Inline functions are a C++ enhancement designed to speed up programs. The primar
 
 别名=alias, alternative name.
 
-
-
 For one, it is necessary to initialize the reference when you declare it; you can’t declare the reference and then assign it a value later the way you can with a pointer:
 
 `int rat;
@@ -194,6 +192,12 @@ int & rodent;
 rodent = rat; // No, you can't do this.`
 
 ### 8.2.2 Reference as Function Parameters
+
+Most often, references are used as function parameters, making a variable name in a function an alias for a variable in the calling program. This method of passing arguments is called ***passing by reference***.
+
+Earlier, I said you should initialize a reference variable when you define it. A function call(函数调用) initializes its parameters with argument values(实参) from the function call. So reference function arguments are initialized to the argument passed by the function call. That is, the following function call initializes the formal parameter(形参) a to `wallet1` and the formal parameter b to `wallet2`:
+
+`swapr(wallet1,wallet2);`
 
 
 
