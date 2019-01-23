@@ -19,4 +19,4 @@ string类型变量；
 
 15.01.19：VS中怎么同时编译两个cpp
 
-23.01.19: 函数后面加const
+23.01.19: 函数后面加const; Review of pointer

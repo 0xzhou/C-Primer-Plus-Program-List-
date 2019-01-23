@@ -193,6 +193,10 @@ For one, it is necessary to initialize the reference when you declare it; you ca
 int & rodent;
 rodent = rat; // No, you can't do this.`
 
+### 8.2.2 Reference as Function Parameters
+
+
+
 ## 8.4 Function Overloading(函数的重载)
 
 The key to function overloading is a function's argument list, also called the *function signature*.
@@ -258,4 +262,16 @@ Let's look at a technique for giving object operations a prettier look. That is 
 C++ lets you extend operator overloading to user-defined types, permitting you, say, to use the `+` symbol to add two objects. Again, the compiler uses the number and type of operands to determine which definition of addition to use. Overloaded operators can often make code look more natural.
 
 ## 11.2 Time on Our Hands: Developing an Operator Overloading Example
+
+### 11.2.2 Overloading Restrictions
+
+* The overloaded operator must have at least one operand that is a user-defined type.This restriction preserves program sanity(保持程序能够正常运行), although it may hinder creative accounting.
+* You can’t use an operator in a manner that violates the syntax rules for the original operator. For example, you can’t overload the modulus operator `%` so that it can be used with a single operand.
+* You can’t create new operator symbols.
+
+
+
+### 11.2.3 More Overloaded Operators
+
+
 
