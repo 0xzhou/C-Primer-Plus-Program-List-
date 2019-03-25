@@ -8,6 +8,21 @@ C++'s basic integer types, in order of increasing width, are `char`,  `short`,` 
 
 
 
+### 3.1.3 The `short` ,`int`,`long`, and `long long` Integer Types
+
+The C++ types  `short` ,`int`,`long`, and `long long` can represent up to four different integer widths. Here are some rules for it:
+
+* A `short` integer is at least 16 bits wide.
+* An `int` integer is at least as big as `short`.
+* A `long` integer is at least 32 bits wide and at least as big as `int`.
+* A `long long` integer is at least 64 bits wide and at least as big as `long`.
+
+
+
+
+
+
+
 ## 4.1 Introducing Arrays
 
 To create an array, you use a declaration statement.An array declaration should indicate three things:
