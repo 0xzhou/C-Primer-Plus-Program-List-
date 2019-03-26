@@ -17,9 +17,15 @@ The C++ types  `short` ,`int`,`long`, and `long long` can represent up to four d
 * A `long` integer is at least 32 bits wide and at least as big as `int`.
 * A `long long` integer is at least 64 bits wide and at least as big as `long`.
 
+You can apply the `sizeof` operator to a type name or to a variable name. When you use the `sizeof` operator with a type name, such as `int`, you enclose the name in parentheses. When it comes to the variable name, parentheses are optional:
+
+`cout << "int is" << sizeof (int) << " Bytes. \n";`
+
+`cout << "short is "<< sizeof n_short << " Bytes. \n"`
 
 
 
+**Unsigned Types:** Each of the four integer types comes in an unsigned variety that can't hold negative values. This has the advantage of increasing the largest value the variable can hold.For example, if `short` represents the range -32768 to +32768, the unsigned version can represent the range 0 to 65535.
 
 
 

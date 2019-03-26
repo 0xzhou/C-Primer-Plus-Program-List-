@@ -1,6 +1,6 @@
 // limits.cpp --some integer limits
 #include <iostream>
-#include <climits> //use limits.h for older systerm
+#include <climits> //use limits.h for older systerm; head files contains information about integer type limits
 int main()
 {
 	using namespace std;
