@@ -29,6 +29,12 @@ You can apply the `sizeof` operator to a type name or to a variable name. When y
 
 
 
+### 3.1.6 Integer Literals
+
+C++ lets you write integers in three different number bases: base 10(the public favorite), base 8 (the old Unix favorite), and base 16(the hardware hacker's favorite). C++ uses the first digit or two to identify the base of a number constant. If the first digit is in the range 1-9, the number is base 10(decimal); thus 93 is base 10. If the first digit is 0 and the second digit is in the range 1-7, the number is base 8(octal); thus 042 is octal and equal to 34 decimal. If the first two characters are 0x or 0X, the number is base 16(hexadecimal); thus 0x42 is hex and equal to 66 decimal.
+
+
+
 ## 4.1 Introducing Arrays
 
 To create an array, you use a declaration statement.An array declaration should indicate three things:
