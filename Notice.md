@@ -294,9 +294,12 @@ For example, if your constructor uses `new` to allocate memory, the destructor s
 
 
 
-## 11.1 Operator Overloading
+## 11.1 Operator Overloading-运算符重载
 
-Let's look at a technique for giving object operations a prettier look. That is called *function overloading* or *function polymorphism*. Its purpose is to let you use the same function name for the same basic operation, even though you apply the operation to different data types.
+Let's look at a technique for giving object operations a prettier look.(程序更简洁，代码更容易理解)That is called *function overloading* or *function polymorphism*. Its purpose is to let you use the same function name for the same basic operation, even though you apply the operation to different data types. 
+
+* 对已有的运算符赋予**多重**的含义
+* 使**同一运算符**作用于**不同类型的数据**时$\rightarrow$不同类型的行为
 
 C++ lets you extend operator overloading to user-defined types, permitting you, say, to use the `+` symbol to add two objects. Again, the compiler uses the number and type of operands to determine which definition of addition to use. Overloaded operators can often make code look more natural.
 
