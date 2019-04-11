@@ -11,7 +11,7 @@ int main()
 	carrots = 25;//assign a value to a variable
 	cout << "I have ";
 	cout << carrots;
-	cout << "  carrots.";
+	cout << " carrots.";
 	cout << endl;
 	carrots = carrots - 1;//modify the variable
 	cout << "Crunch, Crunch. Now I have " << carrots << " carrots." << endl;
