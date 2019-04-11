@@ -1,3 +1,38 @@
+### 2.1.2 C++ Comments
+
+### 2.1.6 C++ Output with `cout`
+
+**The Manipulator `endl`:** `endl` is a special 	C++ Notation that represents the important concept of beginning a new line.
+
+**The Newline Character:** `\n` comes from the C Notation, it is supposed to be as part of the string.
+
+`cout << "What's the next?\n";`
+
+`cout << "What's the next?"<< endl;`
+
+## 2.2 C++ Statements
+
+### 2.2.1 Declaration Statements and Variables
+
+The statement usually provide two kinds of information: the type of memory storage needed(需要的内存) and a label to attach to that storage(该内存单元的名称).
+
+### 2.2.2 Assignments Statements
+
+An assignment statement `=` assign a value to a storage location.
+
+## 2.4 Functions
+
+### 2.4.1 Using a Function That Has a Return Value
+
+When you use `sqrt()` in a program, you must also provide the prototype. You can do this in either of two ways:
+
+* You can type the function prototype into your source code file yourself.
+* You can include the `cmath` header file, which has the prototype in it.
+
+### 2.4.3 User-Defined Functions
+
+
+
 ### 3.1.2 Integer Types
 
 *Integers* are numbers with no fractional part.
