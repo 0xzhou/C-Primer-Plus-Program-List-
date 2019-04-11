@@ -33,15 +33,17 @@ When you use `sqrt()` in a program, you must also provide the prototype. You can
 
 
 
+# 3. Dealing with Data
+
+## 3.1 Simple Variables
+
 ### 3.1.2 Integer Types
 
 *Integers* are numbers with no fractional part.
 
-C++'s basic integer types, in order of increasing width, are `char`,  `short`,` int`, `long` and with C++11 `long long`. Each comes in both signed and unsigned versions. 
+C++'s basic integer types, in order of increasing width, are `char`,  `short`,` int`, `long` and with C++11 `long long`. Each comes in both signed and unsigned versions. That gives you a choice of ten different integer types.
 
->The fundamental unit of computer is *bit*, which has the value 0 or 1. A *byte* usually means an 8-bit unit of memory.
-
-
+>The fundamental unit of computer is *bit*(位), which has the value 0 or 1. A *byte*(字节) usually means an 8-bit unit of memory.
 
 ### 3.1.3 The `short` ,`int`,`long`, and `long long` Integer Types
 
@@ -52,19 +54,19 @@ The C++ types  `short` ,`int`,`long`, and `long long` can represent up to four d
 * A `long` integer is at least 32 bits wide and at least as big as `int`.
 * A `long long` integer is at least 64 bits wide and at least as big as `long`.
 
-You can apply the `sizeof` operator to a type name or to a variable name. When you use the `sizeof` operator with a type name, such as `int`, you enclose the name in parentheses. When it comes to the variable name, parentheses are optional:
+First, the `sizeof` operator returns the size, in bytes, of a type or a variable. You can apply the `sizeof` operator to a type name or to a variable name. When you use the `sizeof` operator with a type name, such as `int`, you enclose the name in parentheses. When it comes to the variable name, parentheses are optional:
 
 `cout << "int is" << sizeof (int) << " Bytes. \n";`
 
 `cout << "short is "<< sizeof n_short << " Bytes. \n"`
 
+### 3.1.4 Unsigned Types
+
+Each of the four integer types comes in an unsigned variety that can't hold negative values. This has the advantage of increasing the largest value the variable can hold.For example, if `short` represents the range -32768 to +32768, the unsigned version can represent the range 0 to 65535.
 
 
-**Unsigned Types:** Each of the four integer types comes in an unsigned variety that can't hold negative values. This has the advantage of increasing the largest value the variable can hold.For example, if `short` represents the range -32768 to +32768, the unsigned version can represent the range 0 to 65535.
 
-
-
-### 3.1.6 Integer Literals
+### 3.1.6 Integer Literals—整型字面值
 
 C++ lets you write integers in three different number bases: base 10(the public favorite), base 8 (the old Unix favorite), and base 16(the hardware hacker's favorite). C++ uses the first digit or two to identify the base of a number constant. If the first digit is in the range 1-9, the number is base 10(decimal); thus 93 is base 10. If the first digit is 0 and the second digit is in the range 1-7, the number is base 8(octal); thus 042 is octal and equal to 34 decimal. If the first two characters are 0x or 0X, the number is base 16(hexadecimal); thus 0x42 is hex and equal to 66 decimal.
 

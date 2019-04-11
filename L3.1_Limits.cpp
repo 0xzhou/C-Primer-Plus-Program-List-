@@ -1,6 +1,6 @@
 // limits.cpp --some integer limits
 #include <iostream>
-#include <climits> //use limits.h for older systerm; head files contains information about integer type limits
+#include <climits> //use limits.h for older systerm
 int main()
 {
 	using namespace std;
@@ -10,10 +10,10 @@ int main()
 	long long n_llong = LLONG_MAX;
 
 	//sizeof operator yields size of type or of variable
-	cout << "int is" << sizeof(int) << " bytes." << endl;
-	cout << "short is" << sizeof(short) << " bytes." << endl;
-	cout << "long is" << sizeof(long) << " bytes." << endl;
-	cout << "long long is" << sizeof(long long) << " bytes" << endl;
+	cout << "int is " << sizeof(int) << " bytes." << endl;
+	cout << "short is " << sizeof(short) << " bytes." << endl;
+	cout << "long is " << sizeof(long) << " bytes." << endl;
+	cout << "long long is " << sizeof(long long) << " bytes" << endl;
 	cout << endl;
 
 	cout << "Maximum values:" << endl;

@@ -23,7 +23,7 @@ int main()
 	sam = sam - 1;
 	sue = sue - 1;
 	cout << "Sam has " << sam << " dollars and Sue has " << sue;
-	cout << " dollars deposoted." << endl << "Lucky Sue!" << endl;
+	cout << " dollars deposited." << endl << "Lucky Sue!" << endl;
 	return 0;
 }
 //注意：short最大值加一变为最小的值；unsign最小值减一变为最大的值。
