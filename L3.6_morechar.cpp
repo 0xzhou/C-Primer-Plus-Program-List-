@@ -4,6 +4,7 @@ int main()
 {
 	using namespace std;
 	char ch = 'M'; //assign ASCII code for M to ch
+	// 'M' represents the numeric code for the M character
 	int i = ch; //store same code in an int
 	cout << "The ASCII code for " << ch << " is " << i << endl;
 	
