@@ -74,6 +74,12 @@ C++ lets you write integers in three different number bases: base 10(the public 
 
 As you probably suspect from the name, the `char` type is designed to store characters, such as letters and numeric digits.
 
+*escape sequences（转义序列）:* `\a` represents the alert character, `\n` represents a newline, \" represents the double quotation mark as an ordinary character instead of a string delimiter.
+
+## 3.2 The `const` Qualifier
+
+## 3.3 Floating-Point Numbers
+
 
 
 ## 4.1 Introducing Arrays
