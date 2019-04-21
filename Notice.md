@@ -82,15 +82,15 @@ As you probably suspect from the name, the `char` type is designed to store char
 
 
 
+# 4. Compound Types 
+
 ## 4.1 Introducing Arrays
 
-To create an array, you use a declaration statement.An array declaration should indicate three things:
+To create an array, you use a declaration statement. An array declaration should indicate three things:
 
 * The type of the value to be stored in each element
 * The name of the array
 * The number of elements in the array
-
-
 
 ## 4.2 Strings 
 
@@ -98,7 +98,7 @@ A `string` is a series of characters(字符) stored in consecutive(连续的) by
 
 The idea of a series of characters stored in consecutive bytes implies that you can store a string in an array of char, with each character kept in its own array element.
 
-C-style strings have a special feature: The last character of every string is the *null character*.This character, written `\0`, is the character with ASCII code 0, and it serves to mark the string’s end. For example, consider the following two declarations:
+C-style strings have a special feature: **The last character of every string is the *null character*.**This character, written `\0`, is the character with ASCII code 0, and it serves to mark the string’s end. For example, consider the following two declarations:
 
 `char dog[8]={'b','e','a','u','x',' ','t','i'}// not a string`
 
