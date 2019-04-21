@@ -8,7 +8,9 @@ int main()
 	yams[1] = 8;
 	yams[2] = 6;
 
-	int yamcosts[3] = { 20,30,5 }; // Tipps: or use static int to initialize
+	int yamcosts[3] = {20,30,5}; // Tipps: or use static int to initialize
+	// It simply provides a comma-separated list of values (the initialization list) enclosed
+	// in braces
 
 	cout << "Total yams = ";
 	cout << yams[0] + yams[1] + yams[2] << endl;
