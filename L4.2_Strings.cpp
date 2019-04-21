@@ -18,11 +18,13 @@ int main()
 	// the sizeof operator gives the size of the entire array, 15 bytes,
 	// but the strlen() function returns the size of the string stored in the
 	// the array and not the size of the array itself.
-	// ¶øÇÒÓö¼û0ÒÔºó£¬Ôò²»¼ÆËã
+	// è€Œä¸”é‡è§0ä»¥åï¼Œåˆ™ä¸è®¡ç®—
 	cout << "Your initial is " << name1[0] << ".\n";
 	name2[3] = '\0'; //set to null charactor
 	cout << "Here are the first 3 characters of my name: ";
 	cout << name2 << endl;
 	return 0;
-
 }
+// sizeof operator gives the size of the entire array, 15 bytes
+// strlen() function returns the size of the string stored in the array
+// and not the size of the array itself
