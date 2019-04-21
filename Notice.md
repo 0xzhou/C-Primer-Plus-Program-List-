@@ -124,7 +124,7 @@ But `"S"` is not a character constant; it represents the string consisting of tw
 
 ### 4.2.3 Adventure in String Input
 
-L4.3：The `cin` technique is to use whitespace--spaces, tabs, and newlines to delineate a string. This means `cin` just reads one word when it gets input for a character array.
+L4.3：The `cin` technique is to use whitespace--spaces（空格）, tabs(制表符), and newlines to delineate a string. This means `cin` just reads one word when it gets input for a character array.
 
 ### 4.2.4 Reading String Input a Line at a Time
 
@@ -132,10 +132,10 @@ Reading string input a word at a time is often not the most desirable choice.
 
 Specifically, you need a line-oriented method instead of a word-oriented method. You are in luck, for the `istream` class, of which `cin` is an example, has some line-oriented class member functions: `getline()` and `get()`. Both read an entire input line—that is, up until a newline character(换行符). 
 
-However, `getline()` then discards the newline character, whereas `get()` leaves it in the input queue. `get()`doesn't reads and stores the newline character. Let’s look at the details, beginning with `getline()`.
+However, `getline()` then discards(丢弃) the newline character, whereas `get()` leaves it in the input queue. `get()` doesn't reads and stores the newline character. Let’s look at the details, beginning with `getline()`.
 
 The `getline()` function conveniently gets a line at a time. It reads input through the newline
-character marking the end of the line, but it doesn't save the newline character. Instead, it replaces it with a `null character('\0')` when storing the string (see Figure 4.5).
+character marking the end of the line, but it doesn't save the newline character. Instead, it replaces it with a `null character('\0')` when storing the string (see Figure 4.5). ——read and replace it !!!
 
 But rather than read and discard the newline character, `get()` leaves that character in the input
 queue. Suppose you use two calls to get() in a row:
@@ -150,7 +150,7 @@ Fortunately, there is help in the form of a variation of `get()`. The call `cin.
 
 `cin.get(name, ArSize); // read first line`
 
-`cin.get(name, ArSize); // read first line`
+`cin.get(); // read new line`
 
 `cin.get(dessert, Arsize); // read second line`
 
