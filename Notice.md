@@ -159,6 +159,12 @@ follows:
 
 `cin.get(name, ArSize).get(); // concatenate member functions`
 
+
+
+## 4.3 Introducing the `string` Class
+
+The `string` class makes some operations simpler than is the case for arrays. For example, you can't simply assign one array to another. But you can assign one string object to another.
+
 ## 4.6 Enumerations(枚举)
 
 The C++ `enum` facility provides an alternative to `const` for creating symbolic constants. For example, consider the following statement:
