@@ -165,6 +165,12 @@ follows:
 
 The `string` class makes some operations simpler than is the case for arrays. For example, you can't simply assign one array to another. But you can assign one string object to another.
 
+
+
+## 4.4 Introducing Structures
+
+You could place the structure declaration inside the `main()` function, just after the opening brace. The second choice, and the one made here, is to place it outside the preceding `main()`. When a declaration occurs outside any function, it's called an *external declaration*. For programs consisting two or more functions: The external declaration can be used by all the functions following it, whereas the internal declaration can be used only by the function in which the declaration is found.
+
 ## 4.6 Enumerations(枚举)
 
 The C++ `enum` facility provides an alternative to `const` for creating symbolic constants. For example, consider the following statement:
