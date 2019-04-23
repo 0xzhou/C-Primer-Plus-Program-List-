@@ -218,17 +218,23 @@ You can set enumerator values explicitly by using the assignment operator:
 
 The assigned values must be integers.
 
+## 4.7 Pointers and the Free Store
 
+**Three properties **of which a computer program must keep track when it stores data:
 
+* Where the information is stored
+* What values is kept there
+* What kind of information is stored
 
+Pointers, which are variables that store **addresses** of values rather than the values themselves. You just apply the address operator, represented by `&`, to a variable to get its location.
 
-
-
-
-
-
+A special type of variable-----the *pointer*, which holds the address of a value. Thus the name of the pointer represents the location. Applying the * operator, called the *indirect value* or the *dereferencing* operator, yields the value at the location.
 
 ### 4.7.6 Using `new` to create dynamic arrays
+
+The  `new` operator finds a block of the correct size and returns the address of the block.
+
+`int * pn = new int` //
 
 ```
 int * psome = new int [10]; // get a block of 10 ints
@@ -236,6 +242,16 @@ int * psome = new int [10]; // get a block of 10 ints
 
 The `new` operator returns the address of first element of array to the pointer `psome`.
 `delete [] psome; // free a dynamic array` 
+
+
+
+## 4.8  Pointers, Arrays, and Pointer Arithmetic(指针算术)
+
+The near equivalence of pointers and array names stems from *pointer arithmetic* and how C++ handles arrays internally. Adding one to a pointer variable increases its value by the number of bytes of the type to which it points. Importantly: C++ interprets the array name as an address.
+
+ 
+
+
 
 
 
