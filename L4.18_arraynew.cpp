@@ -9,6 +9,7 @@ int main()
 	p3[2] = 0.8;//Amazing,we can treat p3 like an array name
 	cout << "p3[1] = " << p3[1] << endl;
 	p3 = p3 + 1;
+	// p3 now points to p3[1]
 	cout << "Now p3[0] is " << p3[0] << " and " << "p3[1] is " << p3[1] << endl;
 	p3 = p3 - 1;// point as the beginning
 	delete[] p3;// free the space that array has
