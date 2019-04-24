@@ -249,7 +249,15 @@ The `new` operator returns the address of first element of array to the pointer 
 
 The near equivalence of pointers and array names stems from *pointer arithmetic* and how C++ handles arrays internally. Adding one to a pointer variable increases its value by the number of bytes of the type to which it points. Importantly: C++ interprets the array name as an address.
 
- 
+ ### 4.8.3 Pointers and Strings
+
+**Note:** With `cout` and with most C++ expressions, the name of an array of `char`, a pointer-to-`char`, and a quoted string constant are all interpreted as the address of the first character of string.
+
+char数组名，char指针，以及用引号括起的字符串常量
+
+
+
+Normally, if you give `cout` a pointer, it prints an address. But if the pointer is type `char *`, `cout` diaplays the pointed-to string. If you want to see the address of the string, you have to type cast the pointer to another pointer type, such as `int *`
 
 
 
