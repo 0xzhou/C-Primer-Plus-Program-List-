@@ -7,7 +7,7 @@ int main()
 	short stacks[3] = { 3,2,1 };
 
 	// Here are two ways to get the address of an array
-	double * pw = wages; // name of an array = address
+	double * pw = wages; // name of an array = address; C++将数组名解释为地址
 	short * ps = &stacks[0]; // or use address operator
 	// with array element
 	cout << "pw = " << pw << ", *pw = " << *pw << endl;
