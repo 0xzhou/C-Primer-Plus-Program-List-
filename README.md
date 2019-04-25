@@ -23,4 +23,6 @@ string类型变量；
 
 28.03.19: reference引用review; 成员函数的重载(双冒号结构！？)；
 
-24.04.10: string的初始化和赋值；
+24.04.19: string的初始化和赋值；
+
+25.04.19: what is stack?

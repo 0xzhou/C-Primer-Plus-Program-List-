@@ -255,9 +255,7 @@ The near equivalence of pointers and array names stems from *pointer arithmetic*
 
 char数组名，char指针，以及用引号括起的字符串常量
 
-
-
-Normally, if you give `cout` a pointer, it prints an address. But if the pointer is type `char *`, `cout` diaplays the pointed-to string. If you want to see the address of the string, you have to type cast the pointer to another pointer type, such as `int *`.
+Normally, if you give `cout` a pointer, it prints an address. But if the pointer is type `char *`, `cout` displays the pointed-to string. If you want to see the address of the string, you have to type cast the pointer to another pointer type, such as `int *`.
 
 
 
@@ -269,7 +267,29 @@ Using `new` with structures has two parts: creating an unnamed structure of the 
 
 `inflatable * ps = new inflatable ;`
 
-This assigns to `ps` the address of a chunk of free memory large enough to hold a structure of the `inflatable` type. The tricky part is accessing members. C++ provides an 
+This assigns to `ps` the address of a chunk of free memory large enough to hold a structure of the `inflatable` type. The tricky part is accessing members. C++ provides an operator just for this situation: the arrow membership operator `(->)`. This operator formed by typing a hyphen and then a greater-than symbol, does for pointers to structures what the dot operator does for structure names.
+
+### 4.8.5 Automatic Storage, static Storage, and Dynamic Storage
+
+**Automatic Storage:** Actually,automatic values are local to the block that contains them. A `block` is a section of code enclosed between braces.
+
+**Static Storage:** Static storage is storage that exists throughout the execution of an entire program. There are two ways to make a variable static. One is to define it externally, outside a function. The other is to use the keyword `static` when declaring a variable:
+
+`static double dee = 56.50;`
+
+***The main point you should note now about automatic and static storage is that these methods rigidly define the lifetime of a variable.***
+
+
+
+**Dynamic Storage:** 
+
+
+
+## 4.9 Combinations of Types
+
+
+
+
 
 
 
@@ -403,8 +423,6 @@ C++ lets you extend operator overloading to user-defined types, permitting you, 
 * The overloaded operator must have at least one operand that is a user-defined type.This restriction preserves program sanity(保持程序能够正常运行), although it may hinder creative accounting.
 * You can’t use an operator in a manner that violates the syntax rules for the original operator. For example, you can’t overload the modulus operator `%` so that it can be used with a single operand.
 * You can’t create new operator symbols.
-
-
 
 ### 11.2.3 More Overloaded Operators
 
