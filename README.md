@@ -22,3 +22,5 @@ string类型变量；
 23.01.19: 函数后面加const; Review of pointer
 
 28.03.19: reference引用review; 成员函数的重载(双冒号结构！？)；
+
+24.04.10: string的初始化和赋值；

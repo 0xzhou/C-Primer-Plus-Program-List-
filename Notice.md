@@ -257,9 +257,19 @@ char数组名，char指针，以及用引号括起的字符串常量
 
 
 
-Normally, if you give `cout` a pointer, it prints an address. But if the pointer is type `char *`, `cout` diaplays the pointed-to string. If you want to see the address of the string, you have to type cast the pointer to another pointer type, such as `int *`
+Normally, if you give `cout` a pointer, it prints an address. But if the pointer is type `char *`, `cout` diaplays the pointed-to string. If you want to see the address of the string, you have to type cast the pointer to another pointer type, such as `int *`.
 
 
+
+### 4.8.4 Using `new` to Create Dynamic Structures
+
+With the `new` operator, you can create dynamic structures.(It is better to create arrays during the runtime rather than at compile time, already known.) 
+
+Using `new` with structures has two parts: creating an unnamed structure of the `inflatable` type and assign its address to a suitable pointer, as following:
+
+`inflatable * ps = new inflatable ;`
+
+This assigns to `ps` the address of a chunk of free memory large enough to hold a structure of the `inflatable` type. The tricky part is accessing members. C++ provides an 
 
 
 
