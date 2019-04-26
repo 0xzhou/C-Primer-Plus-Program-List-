@@ -289,7 +289,15 @@ This assigns to `ps` the address of a chunk of free memory large enough to hold 
 
 
 
+# 5 Loops and Relational Expressions
 
+## 5.1 Introducing `for` Loops
+
+### 5.1.1 Parts of a `for` Loop
+
+`for (initialization; test-expression; update-expression)`
+
+`test-expression` determines whether the loop body gets executed.
 
 
 
