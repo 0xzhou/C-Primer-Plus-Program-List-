@@ -26,3 +26,5 @@ string类型变量；
 24.04.19: string的初始化和赋值；
 
 25.04.19: what is stack?
+
+27.04.19: cin; cin.get()区别

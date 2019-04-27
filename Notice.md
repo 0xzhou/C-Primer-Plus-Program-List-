@@ -301,9 +301,17 @@ This assigns to `ps` the address of a chunk of free memory large enough to hold 
 
 
 
+# 7 Functions: C++'s Programming Modules
+
+## 7.1 Function Review
+
 ### 7.1.1 Defining a Function
 
-Functions without return values are termed type `void` functions. C++ does place a restriction on what types you can use for a return value:The return value cannot be an array. Everything else is possible—integers, floating-point numbers, pointers, and even structures and objects! (Interestingly, even though a C++ function can’t return an array directly, it can return an array that’s part of a structure or object.)
+Functions without return values are termed type `void` functions. C++ does place a restriction on what types you can use for a return value: The return value cannot be an array. Everything else is possible—integers, floating-point numbers, pointers, and even structures and objects!  (Interestingly, even though a C++ function can’t return an array directly, it can return an array that’s part of a structure or object.)
+
+## 7.2 Function Arguments and Passing by Value
+
+A variable that's used to receiver passed values is called a *formal argument* or *formal parameter*. The value passed to the function is called the *actual argument* or *actual parameter*.
 
 ### 7.3.5 Pointer and `const`
 
