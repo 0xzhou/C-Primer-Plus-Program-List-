@@ -313,6 +313,22 @@ Functions without return values are termed type `void` functions. C++ does place
 
 A variable that's used to receiver passed values is called a *formal argument* or *formal parameter*. The value passed to the function is called the *actual argument* or *actual parameter*.
 
+**Variables, including parameters, declared within a function are private to the function.**
+
+## 7.3 Functions and Arrays
+
+C++ interprets an array name as the address of its first element:
+
+` cookies == &cookies[0];`
+
+The useful two identities:
+
+`arr[i] == * (arr + i);`
+
+`&arr[i] == arr + i;`
+
+
+
 ### 7.3.5 Pointer and `const`
 
 ```
