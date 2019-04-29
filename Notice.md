@@ -327,9 +327,9 @@ The useful two identities:
 
 `&arr[i] == arr + i;`
 
-
-
 ### 7.3.5 Pointer and `const`
+
+You can use the `const` keyword two different ways with pointers. The first way is to make a pointer point to a constant object, and that prevents you from using the pointer to change the pointed-to value. The second way is to make the pointer itself constant, and that prevents you from changing where the pointer points.
 
 ```
 int age = 39;
@@ -347,7 +347,25 @@ const float g_earth = 9.80;
 float * pm = & g_earth;//
 ```
 
+## 7.5 Functions and C-Style Strings
 
+## 7.6 Functions and Structures
+
+## 7.10 Pointers to Functions
+
+**Obtaining the Address of a Function:** Simple, just use the function name without trailing parentheses(圆括号).
+
+**Declaring a Pointer to a Function:** The declaration should identity the function's return type and the function's signature(its argument list).
+
+`double pam(int); // prototype`
+
+`double (*pf)(int); // pf points to a function that takes one int argument, returns double`
+
+**Using a Pointer to Invoke a Function: **(*pf) plays the same role as a function name.
+
+
+
+# 8. Adventures in Functions
 
 ## 8.1 C++ Inline Functions(内联函数)
 
