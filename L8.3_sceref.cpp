@@ -10,6 +10,7 @@ int main() {
 
 	int bunnies = 50;
 	rodents = bunnies;// can we change a reference ?
+	// means the same as: rats = bunnies
 	cout << "bunnies = " << bunnies;
 	cout << ", rats = " << rats;
 	cout << ", rodents = " << rodents<<endl;
