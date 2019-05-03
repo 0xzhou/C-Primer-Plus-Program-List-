@@ -25,7 +25,7 @@ int main()
 
 	free_throws dup; // no initialization
 
-	set_pc(one);
+	set_pc(one); // first call
 	display(one);
 	accumulate(team,one);
 	display(team);
@@ -47,7 +47,7 @@ int main()
 	return 0;
 }
 
-void display(const free_throws & ft)
+void display(const free_throws & ft) // displays the structure and does't change it
 {
 	using std::cout;
 	cout << "Name: " << ft.name<<'\n';
