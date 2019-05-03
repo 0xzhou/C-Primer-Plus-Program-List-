@@ -369,17 +369,29 @@ float * pm = & g_earth;//
 
 ## 8.1 C++ Inline Functions(内联函数)
 
-Inline functions are a C++ enhancement designed to speed up programs. The primary distinction between In.f and normal function is : how the C++ compiler incorporates them into a program.
+*Inline functions* are a C++ enhancement designed to speed up programs. The primary distinction between In.f and normal function is : how the C++ compiler incorporates them into a program.
 
-## 8.2 引用变量 Reference Variables
+## 8.2 Reference Variables(引用变量)
 
-别名=alias, alternative name.
+别名=alias, alternative name. The main use for a reference variable is as a formal argument to a function.
+
+### 8.2.1 Creating a Reference Variable
+
+C++ assigns an additional meaning to the `&` symbol and presses it into service for declaring references.
+
+`int rats;`
+
+`int & rodents = rats; // make rodents an alias for rats`
 
 For one, it is necessary to initialize the reference when you declare it; you can’t declare the reference and then assign it a value later the way you can with a pointer:
 
 `int rat;
 int & rodent;
 rodent = rat; // No, you can't do this.`
+
+**You should initialize a reference variable when you declare it.**
+
+
 
 ### 8.2.2 Reference as Function Parameters
 
@@ -389,15 +401,7 @@ Earlier, I said you should initialize a reference variable when you define it. A
 
 `swapr(wallet1,wallet2);`
 
-
-
 ### 8.2.3 Reference Properties and Oddities(特别之处)
-
-
-
-
-
-
 
 ## 8.4 Function Overloading(函数的重载)
 

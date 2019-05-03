@@ -28,3 +28,5 @@ string类型变量；
 25.04.19: what is stack?
 
 27.04.19: cin; cin.get()区别
+
+30.04.19: getline(cin, input); 
