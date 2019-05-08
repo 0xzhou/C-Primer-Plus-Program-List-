@@ -421,6 +421,16 @@ If two functions use the same number and types of arguments in the same order, t
 
 To help identify classes, this book follows a common, but not universal, convention of capitalizing(大写) class names.
 
+**The binding of data and methods into a single unit is the most striking feature of the class.**
+
+**Access Control**: Any program that uses an object of a particular class can access the public portions directly. A program can access the private members of an object only by using the public member functions(or via a friend function). Thus, the public member functions act as go-betweens between a program and an object’s private members; they provide the interface between object and program. 
+
+This insulation of data from direct access by a program is called *data hiding*.
+
+
+
+Thus, the *scope-resolution operator*(作用域解析运算符) resolves the identity of the class to which a method definition applies.
+
 ## 10.3 Class Constructors and Destructors
 
 One of C++'s aims is to make using class objects similar to using standard types. However, the code provided so far in this chapter doesn't let you initialize a `Stock` object the way you can an ordinary `int` or `struct`. For example:
