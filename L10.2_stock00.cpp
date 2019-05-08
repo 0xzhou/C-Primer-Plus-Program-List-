@@ -5,6 +5,7 @@
 
 
 void Stock::acquire(const std::string & co, long n, double pr)
+/* manage the first acquisition of stock for a given company */
 {
 	company = co;
 	if (n < 0) {
