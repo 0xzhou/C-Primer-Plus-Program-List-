@@ -1,33 +1,20 @@
-// usetime0.cpp -- using the first draft of the Time class
-// compile usetime0.cpp and mytime0.cpp together
+//usestock0.cpp -- the client program
+//compile with stock00.cpp and have stock00.h present in the same directory or folder
 #include<iostream>
-#include"L11.1_mytime0.h"
-
+#include"stock00.h"
 int main()
 {
-	using std::cout;
-	using std::endl;
-	Time planning;
-	Time coding(2, 40);
-	Time fixing(5, 55);
-	Time total;
-
-	cout << "planing time = ";
-	planning.Show();
-	cout << endl;
-
-	cout << "coding time = ";
-	coding.Show();
-	cout << endl;
-
-	cout << "fixing time = ";
-	fixing.Show();
-	cout << endl;
-
-	total = coding.Sum(fixing);
-	cout << "coding.Sum(fixing) = ";
-	total.Show();
-	cout << endl;
-
+	Stock flutty_the_cat;
+	flutty_the_cat.acquire("NanoSmart", 20, 12.50);//"NanoSmart" is the name of shares
+	flutty_the_cat.show();
+	flutty_the_cat.buy(15, 18.125);
+	flutty_the_cat.show();
+	flutty_the_cat.sell(400, 20.00);
+	flutty_the_cat.show();
+	flutty_the_cat.buy(300000, 40.125);
+	flutty_the_cat.show();
+	flutty_the_cat.sell(300000, 0.125);
+	flutty_the_cat.show();
 	return 0;
 }
+

@@ -22,7 +22,7 @@ Stock::Stock(const std::string & co, long n, double pr)
 		shares = 0;
 	}
 	else
-		shares = 0;
+		shares = n;
 	share_val = pr;
 	set_tot();
 }
@@ -66,7 +66,7 @@ void Stock::sell(long num, double price)
 	{
 		shares -= num;
 		share_val = price;
-		set_tot;
+		set_tot();
 	}
 }
 
