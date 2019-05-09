@@ -437,9 +437,9 @@ One of C++'s aims is to make using class objects similar to using standard types
 
 `Stock hot = {"Sukie's Autos, Inc.", 200, 50.25};// NO! compile error`
 
-The reason you can’t initialize a Stock object this way is because the data parts have private access status, which means **a program cannot** access the data members **directly**. So the only way a program can access the data members is through a member function. Therefore, you need to devise(设计) an appropriate member function if you're succeed in initializing an object.
+The reason you can’t initialize a Stock object this way is because the data parts have private access status, which means **a program cannot** access the data members **directly**. So the only way a program can access the data members is through a member function. Therefore, you need to devise(设计) an appropriate member function if you're succeed in initializing an object. 
 
-C++ provides for special member functions, called *class constructors*, especially for constructing new objects and assigning values to their data members. (专门用于构造新对象和将值赋给它们的初始成员)
+C++ provides for special member functions, called *class constructors*, especially for constructing new objects and assigning values to their data members. (专门用于构造新对象和将值赋给它们的初始成员) The name is the same as the class name. The constructor prototype and header have an interesting property: Although the constructor has no return value, it’s not declared type void. In fact, a constructor has no declared type.
 
 ### 10.3.1 Declaring and Defining Constructors
 
@@ -467,6 +467,8 @@ For the `Stock` class, the default constructor would look like this:
 
 `Stock::Stock() {}`
 
+The fact that the default constructor has **no arguments** reflects the fact the no values appear in the declaration.
+
 The net result is that the *mycompany* object is created with its members uninitialized, just as the following creates x without providing a value for x:
 
 `int x;`
@@ -474,6 +476,12 @@ The net result is that the *mycompany* object is created with its members uninit
 ### 10.3.4 Destructors                         
 
 For example, if your constructor uses `new` to allocate memory, the destructor should use `delete` to free that memory.​  The *Stock* constructor doesn't do anything fancy(?) like using `new`, so the *Stock* class destructor doesn't really have any tasks to perform.       
+
+
+
+## 10.4 Knowing Your Objects: The `this` pointer
+
+
 
 
 
