@@ -10,7 +10,7 @@ private:
 	int shares;
 	double share_value;
 	double total_value;
-	void set_tot() { total_value= share_value * shares };
+	void set_tot() { total_value= share_value * shares;}
 public:
 	Stock(); //default constructor
 	Stock(const std::string & co, long n = 0, double pr = 0.0);
