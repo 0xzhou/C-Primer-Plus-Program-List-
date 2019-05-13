@@ -481,6 +481,16 @@ For example, if your constructor uses `new` to allocate memory, the destructor s
 
 ## 10.4 Knowing Your Objects: The `this` pointer
 
+## 10.6 Class Scope
+
+Items  that have class scope are known within the class but not outside the class. Thus, you can use the same class member names in different classes without conflict.
+
+**Class Scope:** It applies to names defined in a class, such as the names of class data members and class member functions.
+
+## 10.7 Abstract Data Types =ADT(抽象数据类型)
+
+
+
 
 
 
