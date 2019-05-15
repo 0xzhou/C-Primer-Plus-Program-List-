@@ -8,7 +8,7 @@ class Stack
 {
 private:
 	enum {MAX=10};
-	Item items{ MAX };
+	Item items[MAX];
 	int top;
 public:
 	Stack();
