@@ -514,5 +514,13 @@ C++ lets you extend operator overloading to user-defined types, permitting you, 
 
 ### 11.2.3 More Overloaded Operators
 
+## 11.3 Introducing Friends
 
+There is a special category of nonmember functions, called *friends*, that can access private member of class.
+
+### 11.3.1 Creating Friends
+
+You should think of friend functions as part of an extended interface for a class. Also keep in mind that only a class declaration can decide which functions are friends, so the class declaration still controls which functions access private data.
+
+### 11.3.2 A Common Kind of Friend: Overloading the `<<` operator
 
