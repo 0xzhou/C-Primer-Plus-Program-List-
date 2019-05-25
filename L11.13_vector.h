@@ -34,8 +34,8 @@ namespace VECTOR
 		//operator overloading:
 		Vector operator+(const Vector & b) const;
 		Vector operator-(const Vector & b) const;
-		Vector operator*(const Vector & b) const;
-		Vector operator-() const;
+		Vector operator*(double n) const;
+		Vector operator-() const; //reverse the sign of vector
 
 		//friends:
 		friend Vector operator*(double n, const Vector & a);
