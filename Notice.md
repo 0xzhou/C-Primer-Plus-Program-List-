@@ -524,3 +524,7 @@ You should think of friend functions as part of an extended interface for a clas
 
 ### 11.3.2 A Common Kind of Friend: Overloading the `<<` operator
 
+## 11.6 Automatic Conversions and Type Casts for Classes
+
+
+
